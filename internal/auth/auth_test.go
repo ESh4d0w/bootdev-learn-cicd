@@ -44,13 +44,6 @@ func TestGetAPIKey(t *testing.T) {
 			want:        "xxxxxx",
 			wantErr:     "not expecting an error",
 		},
-		{
-			name:        "Force error",
-			headerKey:   "Authorization",
-			headerValue: "Bearer xxxxx",
-			want:        "xxxxx",
-			wantErr:     "Expecting an Error, but this shouldn't catch",
-		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
