@@ -24,7 +24,7 @@ jobs:
       - name: Run Tests
         run: go test -cover ./...
 
-      - name: Check Go;sec
+      - name: Check GoSec
         run: gosec ./...
 
   style:
